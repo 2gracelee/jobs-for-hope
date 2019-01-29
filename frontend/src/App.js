@@ -11,6 +11,7 @@ import Organizations from './components/Organizations';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import OrganizationDetail from './components/OrganizationDetail';
 
 import {
   setSearchField,
@@ -181,6 +182,7 @@ class App extends Component {
           />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path='/organization-detail/:id?' component={OrganizationDetail} />
           <Footer />
         </div>
       </Router>

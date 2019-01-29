@@ -1,0 +1,195 @@
+@import "../_variables.scss";
+
+.slim-search-container {
+    width:100%;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+    background: #266294;
+    background-position: 5% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    h1{
+      margin: 0 auto;
+    }
+  }
+  
+.search {
+    display:flex;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-direction: row;
+    text-align:left;
+    h3 {
+      font-size: .9em;
+    }
+}
+
+.slim-keyword-search {
+    width: 400px;
+
+    
+}
+
+.slim-location-search{
+    width: 150px;
+}
+
+.slim-search-input, .slim-location-input {
+    width: 100%;
+    padding: 0.3em;
+    border-radius: 0.25em;
+    border: 1px white solid;
+    font-family: $main-font;
+}
+
+.slim-keyword-search, .slim-location-search, .slim-search-btn-container {
+  margin: 5px;
+}
+
+// .slim-search-input, .slim-location-input, .slim-search-btn {
+//     ;
+// }
+
+.slim-search-btn {
+    width:100%;
+    padding:0.3em;
+    border-radius:0.4em;
+    border:1px solid $secondary-color;
+    background: $secondary-color;
+    color: #111;
+    font-family: $main-font;
+    text-align: center;
+}
+
+.slim-search-btn-container {
+  align-self: flex-end;
+  margin:5px;
+  width: 100px;
+}
+
+@media screen and (max-width: 490px){
+  .search-btn-content-container {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (min-width: 700px){
+    .search {
+        margin: auto;
+        width: 730px;
+    }
+}
+
+.back-to-organization-link-wrapper {
+    padding: 1em 3.5em;
+
+    .back-to-organization-link{
+        color: black;
+    }
+}
+
+.organization-detail-card {
+    // display:flex;
+    // flex-wrap:wrap;
+    width: 95%;
+    margin: 0 auto;
+    width: 90%;
+    min-width: 500px;
+    max-width: 1000px;
+    padding: 0 .5em 3em;
+    box-sizing: border-box;
+    text-align: left;
+
+    .organization-detail-card-content{
+        display:flex;
+        flex-wrap:wrap;
+        min-height: 650px;
+        margin: 0 em;
+        padding: 2em 2.8em;
+        border: 0.5px solid #ddd;
+        border-radius: 0.2em;
+        box-shadow: 3px 3px 7px 1px rgba(42, 39, 39, 0.36);
+        
+        .org-logo {
+            width: 270px;
+            min-height: 315px;
+        }
+        .org-mission-statement {
+            width: 604px;
+            padding: 0 0.1em;
+            min-height: 315px;
+        }
+        .org-detail-location-web-wrapper {
+            width: 300px;
+            padding-right: 150px;
+        }
+        .description-wrapper {
+            max-width: 590px;
+        }
+    }
+    
+}
+
+.title-wrapper {
+    height: 42px;
+    padding: 0 0 50px 0;
+
+    .org-detail-title {
+        position: relative;
+        font-size: 1.2em;
+        font-weight: bolder;
+
+        &:after {
+            display: inline-block;
+            margin: 0 20px 7px 0;
+            height: 5px;
+            content: " ";
+            text-shadow: none;
+            background-color: $secondary-color;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+
+        &.odt-sm:after {
+            width: 50px;
+        }
+
+        &.odt-md:after {
+            width: 80px;
+        }
+
+        &.odt-lg:after {
+            width: 126px;
+        }
+    }
+}
+
+.org-logo {
+    width: 260px;
+    .org-img-detail-page {
+        height: 4em;
+        align-content: left;
+    }
+    #org-title-detail-page{
+        width: 225px;
+        margin-top: 0em;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0.5em 0;
+        text-align: center;
+    }
+}
+
+.org-detail-text{
+    font-size: 1.25em;
+    padding: 0.2em;
+
+    &.odt-link{
+        color: skyblue;
+    }
+}
+
