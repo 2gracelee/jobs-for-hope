@@ -49,10 +49,6 @@
   margin: 5px;
 }
 
-// .slim-search-input, .slim-location-input, .slim-search-btn {
-//     ;
-// }
-
 .slim-search-btn {
     width:100%;
     padding:0.3em;
@@ -120,14 +116,21 @@
         .org-mission-statement {
             width: 604px;
             padding: 0 0.1em;
-            min-height: 315px;
+            min-height: 50px;
+            padding-bottom: 20px;
         }
         .org-detail-location-web-wrapper {
-            width: 300px;
-            padding-right: 150px;
+            width: 380px;
+            padding-right: 80px;
+            .website-container {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
         }
         .description-wrapper {
-            max-width: 590px;
+            max-width: 500px;
+            min-width: 300px;
+           
         }
     }
     
@@ -168,6 +171,7 @@
     }
 }
 
+
 .org-logo {
     width: 260px;
     .org-img-detail-page {
@@ -189,7 +193,7 @@
     padding: 0.2em;
 
     &.odt-link{
-        color: skyblue;
+        color: #08b1f6;
     }
 }
 

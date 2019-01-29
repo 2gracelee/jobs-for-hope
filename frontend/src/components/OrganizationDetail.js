@@ -43,7 +43,7 @@ const OrganizationDetail = (props, userJobTitle, onSearchChange, onZipSearchChan
           </div>
         
           <div className="org-detail-location-web-wrapper">
-            <div className="org-detail-sub-container">
+            <div className="location-web-container">
               <div className="title-wrapper"> 
                 <h4 className="org-detail-title odt-sm">Location</h4>
               </div>
@@ -64,7 +64,7 @@ const OrganizationDetail = (props, userJobTitle, onSearchChange, onZipSearchChan
               </div>
               <span className="org-detail-text"> 
                 The current charitable program include:
-
+                <br></br><br></br>
                 Our weekly Food Pantry program which distributes free nutritious food to more than 3,000 homeless and low income youth and adults.
               </span>
           </div>
